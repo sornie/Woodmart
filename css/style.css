@@ -32,6 +32,7 @@
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   --max-width: 1170px;
+  --link-hover:#F59C6C;
 
 }
 
@@ -95,7 +96,7 @@ p {
   max-width: 1170px;
 }
 .header{
-  background-color: #F3F3F3
+  background-color: #F3F3F3;
   padding: 0.5rem 0;
 }
 
@@ -103,12 +104,17 @@ p {
   display: grid;
   grid-template-columns:repeat(2,1fr);
   justify-content: space-between;
+  padding: 1rem 0;
 }
-.q1{
-  background-color: aqua;
+.d-flex{
+  display: flex;
+  gap: 0.5rem;
 }
-.q{
-  background-color: bisque;
+a{
+  padding:1rem;
+}
+a:hover{
+  color: var(--link-hover);
 }
 
 .icon{
